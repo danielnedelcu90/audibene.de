@@ -58,6 +58,7 @@
   .section-headline {
     .font-size(52);
     line-height: normal;
+    margin-bottom: 25px;
   }
 
   h1.section-headline {
@@ -469,7 +470,7 @@
   }
 
   .hero-section {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
 
   .hero-image-mobile {
@@ -538,6 +539,7 @@
     margin: 18px 0 0 0;
     .font-size(22);
     .line-height(30);
+    font-weight: 400;
   }
 
   .hero-form-img {
@@ -745,11 +747,11 @@
 
   .toc-list {
     column-count: 2;
-    column-gap: 30px;
     -webkit-column-count: 2;
-    -webkit-column-gap: 30px;
     -moz-column-count: 2;
-    -moz-column-gap: 30px;
+    column-gap: 0;
+    -webkit-column-gap: 0;
+    -moz-column-gap: 0;
 
     a {
       &:before {
@@ -940,6 +942,90 @@
 
     font-style: normal;
     text-align: center;
+  }
+
+    /*------------------------------------*\
+
+  breadcrumbs
+
+  \*------------------------------------*/
+
+.breadcrumb-section {
+  order: 1;
+  transform: translateY(43px);
+}
+
+  /*------------------------------------*\
+
+  back to top btn
+
+  \*------------------------------------*/
+
+.back-to-top-btn.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+  /*------------------------------------*\
+
+  double offer
+
+  \*------------------------------------*/
+
+.double-offer-section {
+  >.container {
+    flex-direction: row;
+  }
+}
+
+.double-offer-image {
+  max-height: auto;
+}
+
+  /*------------------------------------*\
+
+  accordion
+
+  \*------------------------------------*/
+
+  .section-headline.auditoggle.desktop {
+    margin-bottom: 0;
+  }
+
+  .inner-acc.mobile {
+    display: block;
+  }
+
+  .inner-acc.desktop {
+    display: none;
+  }
+
+    /*------------------------------------*\
+
+    headline copy quote
+
+    \*------------------------------------*/
+
+  .side-quote-left {
+    margin-right: 30px;
+    max-width: calc(100% - 380px);
+  }
+
+  .side-quote-left p {
+    margin-top: 0;
+  }
+
+  .headline-copy-section.side-quote .container {
+      flex-direction: row;
+  }
+
+  .side-quote-right {
+    margin-top: 0;
+    padding: 0 2rem;
+  }
+
+  .side-quote-single {
+      padding: 2.4rem 4rem;
   }
 
   /*------------------------------------*\
@@ -1277,88 +1363,4 @@
     .line-height(16);
   }
 
-}
-
-
-  /*------------------------------------*\
-
-  breadcrumbs
-
-  \*------------------------------------*/
-
-.breadcrumb-section {
-  order: 1;
-}
-
-  /*------------------------------------*\
-
-  back to top btn
-
-  \*------------------------------------*/
-
-.back-to-top-btn.show {
-  opacity: 1;
-  visibility: visible;
-}
-
-  /*------------------------------------*\
-
-  double offer
-
-  \*------------------------------------*/
-
-.double-offer-section {
-  >.container {
-    flex-direction: row;
-  }
-}
-
-.double-offer-image {
-  max-height: auto;
-}
-
-  /*------------------------------------*\
-
-  accordion
-
-  \*------------------------------------*/
-
-.section-headline.auditoggle.desktop {
-  margin-bottom: 0;
-}
-
-.inner-acc.mobile {
-  display: block;
-}
-
-.inner-acc.desktop {
-  display: none;
-}
-
-  /*------------------------------------*\
-
-  headline copy quote
-
-  \*------------------------------------*/
-
-.side-quote-left {
-  margin-right: 30px;
-  max-width: calc(100% - 380px);
-}
-
-.side-quote-left p {
-  margin-top: 0;
-}
-
-.headline-copy-section.side-quote .container {
-    flex-direction: row;
-}
-
-.side-quote-right {
-  margin-top: 0;
-  padding: 0 2rem;
-}
-
-.side-quote-single {
-    padding: 2.4rem 4rem;
 }

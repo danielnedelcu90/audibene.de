@@ -30,7 +30,7 @@ body {
 // font weight
 b,
 strong {
-  font-weight: bold;
+  font-weight: 600;
 }
 
 // headlines
@@ -1103,8 +1103,6 @@ a.btn-primary {
 \*------------------------------------*/
 
 .breadcrumb-section {
-  margin-bottom: -39px;
-
   z-index: 1;
 }
 
@@ -1154,7 +1152,7 @@ a.btn-primary {
 
   a {
     color: @blue;
-    text-decoration: underline;
+    text-decoration: none;
   }
 }
 
@@ -1658,11 +1656,7 @@ h3.hero-form-headline {
 \*------------------------------------*/
 
 .toc-wrapper {
-  padding: 20px;
   margin: 30px 0;
-
-  border: 1px solid #cccccc;
-  .border-radius(4px);
 }
 
 .toc-section:not(.section-space-top) {
@@ -1674,46 +1668,38 @@ h3.hero-form-headline {
 
 .toc-headline {
   margin-bottom: 12px;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .toc-list {
   margin: 0;
   padding: 0;
-
   width: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .toc-item {
+    flex: 0 0 33.333%;
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    margin-left: -1px;
+    margin-top: -1px;
+    border-left: 5px solid @blue;
 
   a {
-    display: block;
-    position: relative;
-
-    padding: 6px 0 0 15px;
-
-    color: @blue;
     text-decoration: none;
+    padding: 1rem 2rem;
+    width: 100%;
 
-    &:before {
-      content: '';
-      display: block;
-      position: absolute;
-
-      width: 5px;
-      height: 5px;
-
-      top: 14px;
-      left: 0;
-
-      background-color: @body-copy;
-      .border-radius(5px);
+    &:hover {
+      text-decoration: none;
     }
   }
 }
 
 .no-touch .toc-item {
-
   a:hover {
     color: @body-copy;
     text-decoration: underline;
@@ -1730,6 +1716,14 @@ h3.hero-form-headline {
   text-align: center;
   margin-bottom: 45px;
 }
+
+.copy-form-section {
+  .headline-copy-headline {
+    margin-bottom: 12px;
+  }
+}
+
+
 
 .headline-copy-content {
 
@@ -1909,7 +1903,7 @@ h3.hero-form-headline {
   h2,
   h3 {
     .font-size(21);
-    font-weight: bold;
+    font-weight: 600;
     line-height: normal;
   }
 
@@ -2061,7 +2055,7 @@ h3.hero-form-headline {
 
 .copy-image-col-headline {
   .font-size(21);
-  font-weight: bold;
+  font-weight: 600;
   line-height: normal;
 }
 
@@ -2100,7 +2094,7 @@ h3.hero-form-headline {
   h2,
   h3 {
     .font-size(21);
-    font-weight: bold;
+    font-weight: 600;
     line-height: normal;
   }
 
@@ -2231,7 +2225,7 @@ h3.hero-form-headline {
 
 .two-column-headline-copy-headline {
   .font-size(18);
-  font-weight: bold;
+  font-weight: 600;
 
   margin-bottom: 9px;
 }
@@ -2407,7 +2401,7 @@ h3.hero-form-headline {
 
 .copy-product-col-headline {
   .font-size(21);
-  font-weight: bold;
+  font-weight: 600;
   line-height: normal;
 }
 
@@ -2425,7 +2419,7 @@ h3.hero-form-headline {
 .copy-product-col-subline {
   margin-top: 12px;
 
-  font-weight: bold;
+  font-weight: 600;
 }
 
 /*------------------------------------*\
@@ -2464,7 +2458,7 @@ h3.hero-form-headline {
   margin-top: 15px;
 
   .font-size(18);
-  font-weight: bold;
+  font-weight: 600;
   line-height: normal;
 
   &.center {
@@ -2581,7 +2575,7 @@ a.related-category-teaser-item {
   color: @blue;
   .font-size(16);
   .line-height(21);
-  font-weight: bold;
+  font-weight: 600;
 }
 
 @media only screen and ( min-width: 480px ) {
@@ -2655,7 +2649,7 @@ a.related-category-teaser-more {
   padding-left: 18px;
   .font-size(20);
   .line-height(28);
-  font-weight: bold;
+  font-weight: 600;
   letter-spacing: 2px;
   line-height: normal;
   text-transform: uppercase;
@@ -2674,7 +2668,7 @@ a.related-category-teaser-more {
   h6 {
     margin-top: 27px;
 
-    font-weight: bold;
+    font-weight: 600;
 
     &:first-child {
       margin-top: 12px;
@@ -3081,5 +3075,3 @@ a.double-offer-link {
 .side-quote-right {
   margin-top: 6rem;
 }
-
-
