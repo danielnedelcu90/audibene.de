@@ -13,7 +13,7 @@ if( have_rows( 'content' ) ):
 		// check current row layout
 		if( get_row_layout() == 'breadcrumb' ):
 
-			get_template_part( 'template-parts/content', 'breadcrumb' );
+			//get_template_part( 'template-parts/content', 'breadcrumb' );
 
 		elseif( get_row_layout() == 'hero' ):
 
@@ -30,6 +30,14 @@ if( have_rows( 'content' ) ):
 		elseif( get_row_layout() == 'copy_form' ):
 
 			get_template_part( 'template-parts/content', 'copy-form' );
+
+		elseif( get_row_layout() == 'quote' ):
+
+			get_template_part( 'template-parts/content', 'quote' );
+
+		elseif( get_row_layout() == 'double_offer' ):
+
+			get_template_part( 'template-parts/content', 'double-offer' );
 
 		elseif( get_row_layout() == 'table_of_contents' ):
 

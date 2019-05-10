@@ -46,10 +46,10 @@
                         <div class="steps-image lazy-load">
                             <img data-src="<?php echo get_sub_field('image')['url']; ?>" alt="<?php echo get_sub_field('image')['alt']; ?>" height="<?php echo (get_sub_field('image')['height'] > 0) ? get_sub_field('image')['height'] : ''; ?>" width="<?php echo (get_sub_field('image')['width'] > 0) ? get_sub_field('image')['width'] : ''; ?>">
                         </div>
-                        <<?php echo (get_sub_field('headline_markup_markup') ? get_sub_field('headline_markup_markup') : 'div'); ?> class="steps-headline<? echo $steps_numbering; ?>">
+                        <<?php echo (get_sub_field('headline_markup_markup') ? get_sub_field('headline_markup_markup') : 'div'); ?> class="steps-headline<?php echo $steps_numbering; ?>">
                             <?php echo get_sub_field('headline'); ?>
                         </<?php echo (get_sub_field('headline_markup_markup') ? get_sub_field('headline_markup_markup') : 'div'); ?>>
-                        <<?php echo get_sub_field('subline_markup_markup') ? get_sub_field('subline_markup_markup') : 'div'; ?> class="steps-subline<? echo $steps_numbering; ?>">
+                        <<?php echo get_sub_field('subline_markup_markup') ? get_sub_field('subline_markup_markup') : 'div'; ?> class="steps-subline<?php echo $steps_numbering; ?>">
                             <?php echo get_sub_field('subline'); ?>
                         </<?php echo get_sub_field('subline_markup_markup') ? get_sub_field('subline_markup_markup') : 'div'; ?>>
                         <div class="steps-copy">

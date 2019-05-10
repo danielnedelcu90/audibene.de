@@ -9,7 +9,7 @@
 ?>
 
 
-<section class="breadcrumb-section">
+ <section class="breadcrumb-section">
     <div class="breadcrumb-container">
         <div class="breadcrumb-wrapper">
 	        <?php if (function_exists('audibene_breadcrumbs')) audibene_breadcrumbs(); ?>

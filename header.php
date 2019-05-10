@@ -52,7 +52,7 @@ if( !isset($_COOKIE['cookie']) && $cookie_bar['enable'] == true ) {
 /**
 * Implement the yoast functions.
 */
-require get_template_directory() . '/inc/language-switcher.php';
+//require get_template_directory() . '/inc/language-switcher.php';
 ?>
 
 <?php if( !isset($_COOKIE['cookie'])&& isset($cookie_bar['privacy_policy_link']) && $cookie_bar['enable'] == true ) { ?>

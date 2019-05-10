@@ -22,6 +22,15 @@
 </style>
 
 <section class="hero-section"<?php echo (get_sub_field('anchor_id') ? ' id="' . get_sub_field('anchor_id') . '""' :  false); ?>>
+    <?php if(!is_front_page()) { ?>
+        <section class="breadcrumb-section">
+            <div class="breadcrumb-container">
+                <div class="breadcrumb-wrapper">
+                    <?php audibene_breadcrumbs(); ?>
+                </div>
+            </div>
+        </section> 
+    <?php } ?>
     <div class="container container-item-gutter">
         <div class="hero-wrapper">
             <<?php echo (get_sub_field('headline_markup_markup') ? get_sub_field('headline_markup_markup') : 'div'); ?> class="section-headline headline-hero">

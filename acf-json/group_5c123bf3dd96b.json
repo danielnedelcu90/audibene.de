@@ -75,10 +75,10 @@
                     "maxlength": ""
                 },
                 {
-                    "key": "field_5c123cd02d38e",
-                    "label": "Headline Markup",
-                    "name": "headline_markup",
-                    "type": "clone",
+                    "key": "field_5c123cd02d38e_field_5bffb6306ed69",
+                    "label": "Markup",
+                    "name": "headline_markup_markup",
+                    "type": "select",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -87,13 +87,26 @@
                         "class": "",
                         "id": ""
                     },
-                    "clone": [
-                        "group_5bffb6250087e"
-                    ],
-                    "display": "seamless",
-                    "layout": "block",
-                    "prefix_label": 0,
-                    "prefix_name": 1
+                    "choices": {
+                        "div": "div",
+                        "h1": "h1",
+                        "h2": "h2",
+                        "h3": "h3",
+                        "h4": "h4",
+                        "h5": "h5",
+                        "p": "p"
+                    },
+                    "default_value": [],
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "value",
+                    "ajax": 0,
+                    "placeholder": "",
+                    "_clone": "field_5c123cd02d38e",
+                    "__key": "field_5bffb6306ed69",
+                    "__name": "markup",
+                    "__label": "Markup"
                 },
                 {
                     "key": "field_5c123cbc2d38d",
@@ -146,5 +159,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1547467803
+    "modified": 1557233539
 }

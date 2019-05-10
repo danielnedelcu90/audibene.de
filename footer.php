@@ -281,6 +281,7 @@
         <?php endif; ?>
 	</footer>
 </div>
+<a id="backToTop" class='back-to-top-btn'></a>
 
 <?php wp_footer(); ?>
 
