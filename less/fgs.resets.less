@@ -1,0 +1,88 @@
+/**
+ * flexbox grid system resets
+ */
+
+// each element
+// border box
+* {
+	.box-sizing( border-box );
+	
+	-webkit-backface-visibility: hidden;
+}
+
+*::after,
+*::before {
+	.box-sizing( border-box );
+}
+
+
+// html
+// 1. set default font family to sans-serif.
+// 2. prevent iOS text size adjust after orientation change, without disabling user zoom.
+// 3. http://johanbrook.com/browsers/native-momentum-scrolling-ios-5/
+// 4.
+// 5.
+html {
+    font-family: sans-serif;  /* 1 */
+    -ms-text-size-adjust: 100%;  /* 2 */
+    -webkit-text-size-adjust: 100%;  /* 2 */
+    //-webkit-overflow-scrolling: touch;  /* 3 */
+    //-webkit-font-smoothing: antialiased;  /* 4 */
+    //-moz-osx-font-smoothing: grayscale;  /* 5 */
+}
+
+// body
+// remove default margin & padding.
+// remove border.
+body {
+	margin: 0;
+	padding: 0;
+
+	height: 100%;
+	
+	border: 0;
+}
+
+// a
+// remove background-color
+a {
+  	background-color: transparent;
+}
+
+// removing dotted links.
+a:focus {
+    outline: none;
+}
+
+// improve readability when focused and also mouse hovered in all browsers.
+a:active,
+a:hover {
+    outline: 0;
+}
+
+// img
+// remove border when inside 'a' element in IE 8/9.
+img {
+    border: 0;
+}
+
+// set block to HTML5 elements
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+main { 
+	display: block;
+}
+
+// remove list styles							  
+ol, ul { 
+	list-style: none; 
+}

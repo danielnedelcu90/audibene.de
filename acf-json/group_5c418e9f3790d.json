@@ -1,0 +1,59 @@
+{
+    "key": "group_5c418e9f3790d",
+    "title": "GO > LegalConsent Script",
+    "fields": [
+        {
+            "key": "field_5c418e9f40b9b",
+            "label": "Content",
+            "name": "go_legalconsent_content",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_5c418e9f44096",
+                    "label": "Script",
+                    "name": "script",
+                    "type": "acf_code_field",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "mode": "javascript",
+                    "theme": "xq-light"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-legalconsent"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1547800320
+}

@@ -1,0 +1,175 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: audibene\n"
+"POT-Creation-Date: 2019-02-12 10:00+0100\n"
+"PO-Revision-Date: 2019-02-12 10:00+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: nl_NL\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.2.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: style.css\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: author.php:19
+msgid "All articles written by"
+msgstr "Alle artikelen geschreven door"
+
+#: author.php:81 template-parts/content-last-blog-article-teaser.php:68
+#: template-parts/content-subcategory-teaser.php:64
+msgid "Read more"
+msgstr "Meer lesen"
+
+#. translators: 1: title.
+#: comments.php:35
+#, php-format
+msgid "One thought on &ldquo;%1$s&rdquo;"
+msgstr ""
+
+#. translators: 1: comment count number, 2: title.
+#: comments.php:41
+#, php-format
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:66
+msgid "Comments are closed."
+msgstr ""
+
+#: footer.php:189
+#, php-format
+msgid ""
+"<span class=\"rating-count\" itemprop=\"ratingCount\">%1$s</span> ratings "
+"with <span class=\"rating-value\" itemprop=\"ratingValue\">%2$s</span> "
+"between <span class=\"worst-rating\" itemprop=\"worstRating\">1</span> to "
+"<span class=\"best-rating\" itemprop=\"bestRating\">5</span> stars"
+msgstr ""
+"<span class=\"rating-count\" itemprop=\"ratingCount\">%1$s</span> "
+"beoordelingen met <span class=\"rating-value\" itemprop=\"ratingValue\">"
+"%2$s</span> uit <span class=\"best-rating\" itemprop=\"bestRating\">5</span> "
+"sterren<meta itemprop=\"worstRating\" content=\"1\" />"
+
+#: functions.php:47
+msgid "Primary"
+msgstr ""
+
+#: functions.php:66
+msgid "You have already submitted a rating."
+msgstr "U hebt al een beoordeling ingediend."
+
+#: functions.php:67
+msgid "Thank you for your rating."
+msgstr "Dank u voor uw beoordeling."
+
+#: header.php:55
+#, php-format
+msgid ""
+"In order to give you a better service hear.com <a href=\"%1$s\">uses "
+"cookies</a>. <span class=\"cookie-bar-accept\"><span>I agree</span></span>"
+msgstr ""
+"Om u beter van dienst te kunnen zijn maakt audibene.nl <a href=\"%1$s"
+"\">gebruik van cookies</a>. <span class=\"cookie-bar-accept\"><span>Ok</"
+"span></span>"
+
+#: header.php:111
+msgid "Menu"
+msgstr "Menu"
+
+#: inc/breadcrumb.php:9
+msgid "Home"
+msgstr "Home"
+
+#: inc/wp-remove-scripts.php:8
+msgid "No feed available, please visit the <a href=\""
+msgstr ""
+
+#. translators: %s: search query.
+#: search.php:22
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: template-parts/content-author-box.php:32
+msgid "Written by"
+msgstr "Geschreven door"
+
+#: template-parts/content-author-box.php:39
+msgid "More articles from author"
+msgstr "Meer artikelen van auteur"
+
+#: template-parts/content-last-blog-article-teaser.php:14
+msgid "Latest blog articles"
+msgstr "Laatste blog artikelen"
+
+#: template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr "Niets gevonden"
+
+#. translators: 1: link to WP admin new post page.
+#: template-parts/content-none.php:24
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: template-parts/content-none.php:37
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: template-parts/content-none.php:44
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: template-parts/content-page.php:24 template-parts/content.php:48
+msgid "Pages:"
+msgstr ""
+
+#. translators: %s: Name of current post. Only visible to screen readers
+#: template-parts/content-page.php:37
+#, php-format
+msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgstr ""
+
+#. translators: %s: Name of current post. Only visible to screen readers
+#: template-parts/content.php:37
+#, php-format
+msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr "Verder lezen<span class=\"screen-reader-text\"> \"%s\"</span>"
+
+#. Theme Name of the plugin/theme
+msgid "audibene"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+#. Author URI of the plugin/theme
+msgid "https://www.audibene.de"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Description"
+msgstr "Omschrijving"
+
+#. Author of the plugin/theme
+msgid "audibene GmbH"
+msgstr "audibene GmbH"
+
+#. Template Name of the plugin/theme
+msgid "Author Page"
+msgstr "Auteur pagina"
