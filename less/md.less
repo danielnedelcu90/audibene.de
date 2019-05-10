@@ -12,6 +12,23 @@
     .line-height( 27 );
   }
 
+  h1 {
+    .font-size(42);
+    .line-height(50);
+  }
+
+  h2 {
+    .font-size(32);
+    .line-height(42);
+  }
+
+  h3 {
+    .font-size(24);
+    .line-height(32);
+  }
+
+
+
   /*------------------------------------*\
 
       section
@@ -44,15 +61,19 @@
   }
 
   h1.section-headline {
-    .font-size(52);
+    .font-size(42);
+    .line-height(50);
   }
 
   h2.section-headline {
     .font-size(32);
+    .line-height(42);
   }
 
-  h3.section-headline {
+  h3.section-headline,
+  .memo-header-headline {
     .font-size(24);
+    .line-height(32);
   }
 
   // subline
@@ -62,6 +83,15 @@
     .font-size(22);
     .line-height(35);
   }
+
+  .hide-desktop {
+    display: block;
+  }
+
+  .hide-mobile {
+    display: none;
+  }
+
 
   /*------------------------------------*\
 
@@ -438,6 +468,10 @@
     margin-top: 0;
   }
 
+  .hero-section {
+    margin-bottom: 20px;
+  }
+
   .hero-image-mobile {
     display: none;
   }
@@ -641,6 +675,8 @@
 
   .usp-headline {
     margin-top: 30px;
+    .font-size(24);
+    .line-height(32);
   }
 
   .usp-copy {
@@ -1231,7 +1267,7 @@
 
 	footer request
 
-\*------------------------------------*/
+  \*------------------------------------*/
 
   .site-request-footer {
     margin-top: 90px;
@@ -1241,4 +1277,88 @@
     .line-height(16);
   }
 
+}
+
+
+  /*------------------------------------*\
+
+  breadcrumbs
+
+  \*------------------------------------*/
+
+.breadcrumb-section {
+  order: 1;
+}
+
+  /*------------------------------------*\
+
+  back to top btn
+
+  \*------------------------------------*/
+
+.back-to-top-btn.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+  /*------------------------------------*\
+
+  double offer
+
+  \*------------------------------------*/
+
+.double-offer-section {
+  >.container {
+    flex-direction: row;
+  }
+}
+
+.double-offer-image {
+  max-height: auto;
+}
+
+  /*------------------------------------*\
+
+  accordion
+
+  \*------------------------------------*/
+
+.section-headline.auditoggle.desktop {
+  margin-bottom: 0;
+}
+
+.inner-acc.mobile {
+  display: block;
+}
+
+.inner-acc.desktop {
+  display: none;
+}
+
+  /*------------------------------------*\
+
+  headline copy quote
+
+  \*------------------------------------*/
+
+.side-quote-left {
+  margin-right: 30px;
+  max-width: calc(100% - 380px);
+}
+
+.side-quote-left p {
+  margin-top: 0;
+}
+
+.headline-copy-section.side-quote .container {
+    flex-direction: row;
+}
+
+.side-quote-right {
+  margin-top: 0;
+  padding: 0 2rem;
+}
+
+.side-quote-single {
+    padding: 2.4rem 4rem;
 }

@@ -1,8 +1,10 @@
 /*------------------------------------*\
 
-	base styles
+  base styles
 
 \*------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&subset=latin-ext');
 
 // html
 html {
@@ -12,7 +14,7 @@ html {
 // body
 body {
   color: @body-copy;
-  font-family: Arial, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   .font-size( 16 );
   font-style: normal;
   font-weight: 400;
@@ -39,21 +41,24 @@ h4,
 h5,
 h6 {
   margin: 0;
-
-  font-weight: 400;
+  font-weight: 600;
   line-height: normal;
 }
 
-h1 {
-  .font-size(52);
+h4 {
+  font-weight: 700;
 }
 
-h2 {
+h1 {
   .font-size(32);
 }
 
-h3 {
+h2 {
   .font-size(24);
+}
+
+h3 {
+  .font-size(20);
 }
 
 // links
@@ -126,10 +131,14 @@ img {
   height: auto;
 }
 
+.hide-desktop {
+  display: none;
+}
+
 /*------------------------------------*\
 
-	lazy load (unveil)
-	http://luis-almeida.github.io/unveil/
+  lazy load (unveil)
+  http://luis-almeida.github.io/unveil/
 
 \*------------------------------------*/
 
@@ -153,7 +162,7 @@ img {
 
 /*------------------------------------*\
 
-	section
+  section
 
 \*------------------------------------*/
 
@@ -264,14 +273,17 @@ section {
 
 h1.section-headline {
   .font-size(32);
+  .line-height(42);
 }
 
 h2.section-headline {
   .font-size(24);
+  .line-height(32);
 }
 
 h3.section-headline {
-  .font-size(18);
+  .font-size(20);
+  .line-height(28);
 }
 
 // subline
@@ -284,7 +296,7 @@ h3.section-headline {
 
 /*------------------------------------*\
 
-	button
+  button
 
 \*------------------------------------*/
 
@@ -508,7 +520,7 @@ a.btn-primary {
 
 /*------------------------------------*\
 
-	header
+  header
 
 \*------------------------------------*/
 
@@ -822,7 +834,7 @@ a.btn-primary {
 
 /*------------------------------------*\
 
-	footer
+  footer
 
 \*------------------------------------*/
 
@@ -1038,7 +1050,7 @@ a.btn-primary {
 
 /*------------------------------------*\
 
-	footer request
+  footer request
 
 \*------------------------------------*/
 
@@ -1119,16 +1131,6 @@ a.btn-primary {
     top: 0;
     bottom: 0;
     right: 0;
-
-    //background: -moz-linear-gradient(left, rgba(242,245,247,0) 0%, rgba(242,245,247,1) 50%, rgba(242,245,247,1) 100%);
-    //background: -webkit-linear-gradient(left, rgba(242,245,247,0) 0%,rgba(242,245,247,1) 50%,rgba(242,245,247,1) 100%);
-    //background: linear-gradient(to right, rgba(242,245,247,0) 0%,rgba(242,245,247,1) 50%,rgba(242,245,247,1) 100%);
-    //filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f5f7', endColorstr='#f2f5f7',GradientType=1 );
-
-    background: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 100%);
-    background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 50%,rgba(255,255,255,1) 100%);
-    background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgb(255, 255, 255) 50%, rgb(255, 255, 255) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 );
   }
 
   &::before {
@@ -1174,6 +1176,8 @@ a.btn-primary {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
 }
 
 .hero-wrapper {
@@ -1515,8 +1519,8 @@ h3.hero-form-headline {
 .usp-headline {
   margin-top: 18px;
 
-  .font-size(21);
-  line-height: normal;
+  .font-size(20);
+  .line-height(28);
 
   word-wrap: break-word;
   overflow-wrap: break-word;
@@ -1724,6 +1728,7 @@ h3.hero-form-headline {
 
 .headline-copy-headline {
   text-align: center;
+  margin-bottom: 45px;
 }
 
 .headline-copy-content {
@@ -1792,16 +1797,6 @@ h3.hero-form-headline {
         color: @body-copy;
         text-decoration: underline;
       }
-    }
-  }
-}
-
-.headline-copy-section:not(.section-space-top) {
-
-  .headline-copy-content {
-
-    p:first-child {
-      margin-top: 45px;
     }
   }
 }
@@ -2658,8 +2653,8 @@ a.related-category-teaser-more {
 
 .memo-header-headline {
   padding-left: 18px;
-
-  .font-size(24);
+  .font-size(20);
+  .line-height(28);
   font-weight: bold;
   letter-spacing: 2px;
   line-height: normal;
@@ -2913,3 +2908,178 @@ a.related-category-teaser-more {
 }
 
 .site-content {}
+
+
+/*------------------------------------*\
+
+    back to top btn
+
+\*------------------------------------*/
+
+.back-to-top-btn {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s, 
+  opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+
+  &:after {
+    content: "";
+    background: url('img/arrow-up-circle.svg');
+    line-height: 50px;
+    display: block;
+    width: 100%;
+    background-color: #fff;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: .6;
+    border-radius: 50%;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.back-to-top-btn.show.up {
+  opacity: 1;
+  visibility: visible;
+}
+
+/*------------------------------------*\
+
+    double offer
+
+\*------------------------------------*/
+
+.double-offer-section {
+  .container {
+    display: flex;
+    flex-direction: column;
+  } 
+}
+
+.double-offer-image {
+  flex: 1 0 350px;
+  display: block;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  max-height: 250px;
+}
+
+.double-offer-content {
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 auto;
+  padding: 2.5rem;
+  background: #E9EFF6;
+}
+
+a.double-offer-link {
+  text-align: right;
+  color: #265DA5;
+  text-decoration: none;
+}
+
+/*------------------------------------*\
+
+    accordion
+
+\*------------------------------------*/
+
+.inner-acc {
+  padding-left: 1em;
+  overflow: hidden;
+}
+
+.inner-acc.mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 748px) {
+  .section-headline.auditoggle.mobile {
+    margin-bottom: 0;
+  }
+}
+
+/*------------------------------------*\
+
+    quote
+
+\*------------------------------------*/
+
+.quote-head {
+  display: inline-flex;
+  align-items: center;
+  margin-top: -8rem;
+  background: #fff;
+  padding: 0 2rem;
+}
+
+.quote-title {
+  margin-left: 1.5rem;
+}
+
+.quote-image {
+  width: 90px;
+  flex: 1 0 90px;
+  overflow: hidden;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.quote-content {
+  font-style: italic;
+}
+
+/*------------------------------------*\
+
+    headline copy side quote
+
+\*------------------------------------*/
+
+.headline-copy-section.side-quote {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.side-quote-right {
+  .quote-image {
+    width: 65px;
+    flex: 1 0 65px;
+    height: 65px;
+  }
+
+  .quote-head {
+    margin-top: -4rem;
+  }
+}
+
+.side-quote-single,
+.side-quote-right {
+  border: 1px solid #ccc;
+  padding: 2rem 3rem;
+}
+
+.side-quote-right {
+  margin-top: 6rem;
+}
+
+
