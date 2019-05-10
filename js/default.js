@@ -399,6 +399,63 @@ $( document ).ready( function() {
         });
     });
 
+    /*------------------------------------*\
+
+    back to to btn
+
+    \*------------------------------------*/
+
+    var backToTopBtn = $('#backToTop');
+
+    $(window).scroll(function() {
+      
+      if ($(window).scrollTop() > 300) {
+        backToTopBtn.addClass('show');
+      } else {
+        backToTopBtn.removeClass('show');
+      }
+
+      var st = $(window).scrollTop();
+    });
+
+    backToTopBtn.on('click', function(e) {
+      e.preventDefault();
+      $('html, body').animate({scrollTop:0}, '300');
+    });
+
+
+    /*------------------------------------*\
+
+        accordion
+
+    \*------------------------------------*/
+
+    $('.auditoggle').click(function(e) {
+        e.preventDefault();
+        var $this = $(this);
+        if (window.innerWidth < 749 && $this.hasClass('mobile')) { 
+            accordionify($this);
+        }
+        if (window.innerWidth > 748 && $this.hasClass('mobile') && $this.parent().find('.inner-acc').css('display') == 'none') {
+            accordionify($this);
+        }
+        if (window.innerWidth > 748 && $this.hasClass('desktop')) {
+            accordionify($this);
+        }
+    });
+
+    var accordionify = function accordionify(el) {
+        if (el.next().hasClass('show-inner')) {
+            el.next().removeClass('show-inner');
+            el.next().slideUp(350);
+        } else {
+            el.parent().find('.inner-acc').removeClass('show-inner');
+            el.parent().find('.inner-acc').slideUp(350);
+            el.next().toggleClass('show-inner');
+            el.next().slideToggle(350);
+        }
+    }
+
 }); // end document ready
 
 /**
