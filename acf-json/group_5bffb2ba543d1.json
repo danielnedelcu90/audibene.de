@@ -1658,6 +1658,30 @@
                             "placeholder": ""
                         },
                         {
+                            "key": "field_5cdbe0758e055",
+                            "label": "Form icons",
+                            "name": "form_icons",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "preview_size": "thumbnail",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        },
+                        {
                             "key": "field_5c0a316547c42_field_5c07a8303e0e0",
                             "label": "Section Space Bottom",
                             "name": "section_space_bottom_section_space_bottom",
@@ -1666,7 +1690,7 @@
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
-                                "width": "50",
+                                "width": "33",
                                 "class": "",
                                 "id": ""
                             },
@@ -1691,7 +1715,7 @@
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
-                                "width": "50",
+                                "width": "33",
                                 "class": "",
                                 "id": ""
                             },
@@ -1716,7 +1740,7 @@
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
-                                "width": "50",
+                                "width": "33",
                                 "class": "",
                                 "id": ""
                             },
@@ -5580,7 +5604,6 @@
         "the_content",
         "excerpt",
         "discussion",
-        "revisions",
         "slug",
         "format",
         "featured_image",
@@ -5590,5 +5613,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1557763150
+    "modified": 1557913970
 }

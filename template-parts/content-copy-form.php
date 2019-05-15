@@ -33,6 +33,11 @@ $go_form_script = get_sub_field('go_form_script');
 			        <?php endwhile; ?>
 
 		        <?php endif; ?>
+		        <?php if (get_sub_field('form_icons')) { ?>
+		        	<div class="form-icons">
+		        		<img class="form-icons-img" src="<?php echo get_sub_field('form_icons')['url']; ?>" />
+		        	</div>
+		        <?php } ?>
             </div>
             <<?php echo (get_sub_field('markup_inner') ? get_sub_field('markup_inner') : 'div'); ?> class="section-headline headline-hero">
 		        <?php echo get_sub_field('headline_inner'); ?>
