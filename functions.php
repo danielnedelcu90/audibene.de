@@ -199,3 +199,8 @@ require get_template_directory() . '/inc/breadcrumb.php';
 //echo '<pre>';
 //print_r($field_rating_count);
 //echo '</pre>';
+
+function theme_increase_mem_limit($wp_max_mem_limit) {
+	return "2048M";
+}
+add_filter('admin_memory_limit', 'theme_increase_mem_limit',10,3);

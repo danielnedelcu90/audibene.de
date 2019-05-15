@@ -16,7 +16,7 @@ $go_form_script = get_sub_field('go_form_script');
 ?>
 
 
-<section class="hero-form-section<?php echo (is_array(get_sub_field('logo_line')) ? ' logo-line' : false); ?>"<?php echo (get_sub_field('background_image')['url'] ? ' style="background-image: url(' . get_sub_field('background_image')['url'] . ');"' : false); ?><?php echo (get_sub_field('anchor_id') ? ' id="' . get_sub_field('anchor_id') . '""' :  false); ?>>
+<section class="<?php displayClass(); ?> hero-form-section<?php echo (is_array(get_sub_field('logo_line')) ? ' logo-line' : false); ?>"<?php echo (get_sub_field('background_image')['url'] ? ' style="background-image: url(' . get_sub_field('background_image')['url'] . ');"' : false); ?><?php echo (get_sub_field('anchor_id') ? ' id="' . get_sub_field('anchor_id') . '""' :  false); ?>>
     <div class="container container-item-gutter hero-form-container">
 
         <div class="hero-form-wrapper">

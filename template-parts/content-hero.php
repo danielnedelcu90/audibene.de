@@ -21,7 +21,7 @@
     }
 </style>
 
-<section class="hero-section"<?php echo (get_sub_field('anchor_id') ? ' id="' . get_sub_field('anchor_id') . '""' :  false); ?>>
+<section class="<?php displayClass(); ?> hero-section"<?php echo (get_sub_field('anchor_id') ? ' id="' . get_sub_field('anchor_id') . '""' :  false); ?>>
     <?php if(!is_front_page()) { ?>
         <section class="breadcrumb-section">
             <div class="breadcrumb-container">

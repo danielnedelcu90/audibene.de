@@ -31,6 +31,14 @@ if( have_rows( 'content' ) ):
 
 			get_template_part( 'template-parts/content', 'copy-form' );
 
+		elseif( get_row_layout() == 'button_links' ):
+
+			get_template_part( 'template-parts/content', 'button-links' );
+			
+		elseif( get_row_layout() == 'rating' ):
+
+			get_template_part( 'template-parts/content', 'rating' );
+
 		elseif( get_row_layout() == 'quote' ):
 
 			get_template_part( 'template-parts/content', 'quote' );

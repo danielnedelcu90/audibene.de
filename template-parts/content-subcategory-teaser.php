@@ -8,7 +8,7 @@
  */
 ?>
 
-<section class="subcategory-teaser-section">
+<section class="<?php displayClass(); ?> subcategory-teaser-section">
     <div class="container container-item-gutter">
         <?php
 

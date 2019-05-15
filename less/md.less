@@ -93,6 +93,10 @@
     display: none;
   }
 
+  .hide--mobile {
+    display: none;
+  }
+
 
   /*------------------------------------*\
 
@@ -773,25 +777,30 @@
     .fgs-flex-display(flex);
     .fgs-justify-content(space-between);
     .fgs-align-items(center);
-
-    padding: 20px;
-
+    padding: 30px;
     background-color: #f0f0f0;
     .border-radius(4px);
   }
 
   .teaser-cta-teaser {
     display: block;
-
     padding-right: 42px;
-
     font-weight: bold;
     text-align: left;
   }
 
+.teaser-cta-style-2 {
+  .teaser-cta-teaser {
+    font-size: 27px;
+  }
+
+  .teaser-cta-text {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}
 
   .teaser-cta-link {
-
     a {
       padding: 6px 18px;
     }
@@ -831,15 +840,12 @@
 
   .form-sidebar-sidebar {
     display: block;
-
     border: 1px solid #f0f0f0;
   }
 
   .form-sidebar-sidebar-headline {
     padding: 12px;
-
     border-bottom: 1px solid #f0f0f0;
-
     text-align: center;
 
     span {
@@ -873,7 +879,6 @@
 
   .form-sidebar-checklist-item {
     position: relative;
-
     margin-bottom: 17px;
     padding-left: 33px;
 
@@ -888,7 +893,6 @@
   .form-sidebar-checklist-checker {
     display: block;
     position: absolute;
-
     top: -4px;
     left: 0;
 
@@ -904,7 +908,6 @@
 
     img {
       margin: 0 auto;
-
       width: auto;
       max-width: 100%;
       height: auto;
@@ -926,7 +929,6 @@
     .fgs-flex(1);
 
     padding-right: 22px;
-
     text-align: right;
   }
 
@@ -936,7 +938,6 @@
 
   .form-sidebar-client-name {
     margin-top: 5px;
-
     font-style: normal;
     text-align: center;
   }
@@ -990,6 +991,9 @@
   }
 
   .section-headline.auditoggle.desktop {
+    border: 1px solid #ccc;
+    padding: 1rem 2rem;
+    cursor: pointer;
     &:after {
       display: inline-block;
     }
@@ -1227,16 +1231,15 @@
     padding-bottom: 60px;
   }
 
-  .author-box-content {
-    padding-left: @fgs-md-item-gutter;
-    padding-right: @fgs-md-item-gutter;
-  }
-
   .author-box-wrapper {
     .fgs-justify-content(flex-start);
     .fgs-flex-direction(row);;
 
     text-align: left;
+  }
+
+  .author-box-head {
+    display: flex;
   }
 
   .author-box-meta {
@@ -1365,6 +1368,18 @@
 
     .font-size(16);
     .line-height(16);
+  }
+
+  /*------------------------------------*\
+
+    button links
+
+  \*------------------------------------*/
+
+  .button-links-buttons {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
   }
 
 }

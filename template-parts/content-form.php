@@ -15,7 +15,7 @@ $go_form_script = get_sub_field('go_form_script');
 
  ?>
 
-<section class="form-section"<?php echo (get_sub_field('anchor_id') ? ' id="' . get_sub_field('anchor_id') . '""' :  false); ?>>
+<section class="<?php displayClass(); ?> form-section"<?php echo (get_sub_field('anchor_id') ? ' id="' . get_sub_field('anchor_id') . '""' :  false); ?>>
     <div class="container container-gutter">
         <div class="form-wrapper">
 

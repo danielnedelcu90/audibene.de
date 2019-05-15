@@ -8,7 +8,7 @@
  */
 ?>
 
-<section class="subcategory-teaser-section">
+<section class="<?php displayClass(); ?> subcategory-teaser-section">
     <div class="container container-item-gutter">
         <h2 class="section-headline subcategory-teaser-headline center">
 		    <?php echo __('Latest blog articles','audibene'); ?>
