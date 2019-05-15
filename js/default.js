@@ -407,15 +407,27 @@ $( document ).ready( function() {
 
     var backToTopBtn = $('#backToTop');
 
+    var lastScrollTop = 0;
+
     $(window).scroll(function() {
       
       if ($(window).scrollTop() > 300) {
         backToTopBtn.addClass('show');
+
+        var st = $(this).scrollTop();
+
+        if (st < lastScrollTop){
+            backToTopBtn.addClass('up');
+        } else {
+            backToTopBtn.removeClass('up');
+        }
+
+           lastScrollTop = st;
+
       } else {
         backToTopBtn.removeClass('show');
       }
 
-      var st = $(window).scrollTop();
     });
 
     backToTopBtn.on('click', function(e) {
